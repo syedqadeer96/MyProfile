@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="home.css">
+    <link rel="stylesheet"  href="contact.css">
+    <script  src="jsonImages.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+              <li><a id="len1" class="hoverable" href="home.html">Home</a></li>
+              <li><a id="len2" class="hoverable" href="about.html">About Me</a></li>
+              <li><a id="len3" class="hoverable" href="#">Contact Me</a></li>
+              <li><a id="len4" class="hoverable" href="gallery.html" onclick="loadData()">Gallery</a></li>
+             
+            </ul>
+          </div>
+        </nav>
+    </div><br /><br />
+    <form class="my-form" onsubmit="validateEmail()">
+      <div class="container">
+        <h1>Get in touch!</h1>
+        <ul>
+          <li>
+            <div class="grid grid-2">
+              <input type="text" placeholder="Name" id="name" required autocomplete="off">  
+              <input type="text" placeholder="Surname" id="surname">
+            </div>
+          </li>
+          <li>
+            <div class="grid grid-2">
+              <input type="email" placeholder="Email" id="email" autocomplete="off">  
+              <input type="tel" placeholder="Phone" id="phone">
+            </div>
+          </li>    
+          <li>
+            <textarea placeholder="Message"></textarea>
+          </li>   
+          <li>
+            <div class="grid grid-3">
+              <button class="btn-grid" type="submit">
+                <span class="back">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg" alt="">
+                </span>
+                <span class="front">SUBMIT</span>
+              </button>
+              
+            </div>
+          </li>    
+        </ul>
+      </div>
+    </form>
+    <script type="text/javascript" src="validation.js"></script>
+    <i class="fa-brands fa-github"></i>
+    </body>
+</html>
